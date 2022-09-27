@@ -30,18 +30,37 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: #fff;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #f9d8ae;
+  padding: 0.8rem 2rem;
+  color: #f9d8ae;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 250ms ease-in-out;
+}
+
+button:hover {
+  background: #f9d8ae;
+  color: #30373f;
+}
+
 ul,
 ol {
   list-style: none;
 }
 
 .container {
-  max-width: 1366px;
+  /* max-width: 1024px; */
   margin: 0 auto;
 }
 
 .header {
-  background-color: #1e2526;
+  background-color: #30373f;
 
   display: flex;
   align-items: center;
@@ -53,6 +72,18 @@ ol {
   top: 0;
   height: 6.4rem;
   width: 100%;
-  border-bottom: 2px solid aquamarine;
+  /* max-width: 1024px; */
+  border-bottom: 2px solid #f9d8ae;
   overflow-y: none;
+}
+
+.nav-logo {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 4.8rem;
+  align-items: baseline;
 }
